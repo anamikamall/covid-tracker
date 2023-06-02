@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Covid from './components/Covid';
+import Statewise from "./components/StateWiseData/Statewise";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <h1>hii</h1> */}
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<Covid/>} exact/>
+      <Route path="/state" element ={<Statewise/>} exact/>
+      </Routes>
+    {/* <Covid /> */}
+    {/* <Statewise /> */}
+    </>
   );
 }
 
