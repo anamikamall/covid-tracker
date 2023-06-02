@@ -7,6 +7,8 @@
     background-color: #1F1E1F;
     text-align: center;
     height: 91.5vh;
+    /* height: fit-content; */
+    /* height: 100vh; */
     align-items: center;
 }
 
@@ -50,6 +52,8 @@ ul {
     justify-content: center;
     align-items: center;
     padding-left: 0 !important;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0 !important;
 }
 
 .card {
@@ -96,6 +100,9 @@ ul {
 }
 
 @media (max-width: 700px) {
+    .mainbody {
+        height: fit-content;
+    }
     .card_total {
         font-size: 70px;
     }
@@ -111,6 +118,12 @@ ul {
     .card .card_back {
         height: 290px;
     }
+}
+
+@media (max-width: 1050px) {
+    .card_total {
+            font-size: 40px;
+        }
 }
 
 .country {
