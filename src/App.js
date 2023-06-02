@@ -14,8 +14,8 @@ const App = () => {
     {/* <h1>hii</h1> */}
     <Navbar/>
     <Routes>
-      <Route path="covid-tracker/" element={<Covid/>} exact/>
-      <Route path="covid-tracker/state" element ={<Statewise/>} exact/>
+      <Route path="/covid-tracker/" element={<Covid/>} exact/>
+      <Route path="/covid-tracker/state" element ={<Statewise/>} exact/>
       </Routes>
     {/* <Covid /> */}
     {/* <Statewise /> */}

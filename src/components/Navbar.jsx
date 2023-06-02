@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <>
     <div className="menu">
-    <NavLink exact activeClassName="active" to='covid-tracker/'>Country </NavLink>
-    <NavLink exact activeClassName="active" to='covid-tracker/state'>States </NavLink>
+    <NavLink exact activeClassName="active" to='/covid-tracker/'>Country </NavLink>
+    <NavLink exact activeClassName="active" to='/covid-tracker/state'>States </NavLink>
     </div>
     </>
   )
